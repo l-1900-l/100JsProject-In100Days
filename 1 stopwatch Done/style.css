@@ -1,0 +1,83 @@
+*,html,body{
+  padding: 0;
+  margin: 0;
+  background-color: #eeeeee;
+
+}
+.stopwatch{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 66vw;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border: dotted 0.5px black;
+
+}
+button{
+  border: solid #dddddd 1px;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 18px;
+  margin: 1rem;
+  background-color: #fffbf6ec;
+  transition: 0.2s;
+}
+button:hover{
+  background-color: #dddddd;
+}
+.stopwatch h1{
+  font-size: 8rem;
+
+}
+.stopwatch i{
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 20px;
+  color: #575757;
+  transition: 0.3s;
+}
+.stopwatch i:hover{
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .stopwatch h1{
+    font-size: 5rem;
+  }
+}
+
+.olBox{
+  border: solid none;
+  border-radius: 10px;
+  background-color: #cfcfcf;
+  height: 200px;
+  text-align: center;
+  padding: 20px 2rem;
+  margin: 10px 2rem;
+  overflow-y: auto;
+}
+.olBox p{
+  display: inline;
+  padding: 5px 50px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  /* background-color: #ececec; */
+  position: relative;
+  top: -20;
+}
+.olBox ol div{
+  display: flex;
+  justify-content: space-around;
+  background-color: #cfcfcf;
+
+}
+.olBox ol div li , .olBox ol div span{
+  padding: 5px;
+  font-size: 20px;
+  display: block;
+  background-color: #cfcfcf;
+}
